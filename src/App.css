@@ -1,38 +1,144 @@
 .App {
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-protal {
+  background-image: linear-gradient(
+    225deg,
+    black 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  width: 100vw;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.welcome-text {
+  font-family: "Times New Roman", Times, serif;
   color: white;
 }
+.login-title {
+  color: white;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 2px;
+}
+.card-body {
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(20, 12, 12, 1) 97%
+  ); */
+  background-image: linear-gradient(
+    225deg,
+    black 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+}
+/*END => LOGIN PORTAL */
+/* ------------------------------------------------------- */
 
-.App-link {
-  color: #61dafb;
+/* DASHBOARD-SIDEBAR */
+.side-list-item {
+  display: block;
+  font-weight: bold;
+}
+.side-list-item:hover {
+  font-style: italic;
+}
+.sidebar-icon {
+  width: 20px;
+  margin-right: 5px;
+  color: rgba(0, 0, 0, 0.765);
+}
+.sb-admin-icon {
+  width: 30px;
+  height: 30px;
+}
+.user-account-icon {
+  margin-right: 8px;
+}
+.sidebar-color {
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    black 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* END => DASHBOARD-SIDEBAR */
+/* ------------------------------------------------------- */
+
+/* SEARCH BAR  */
+/* .header-content {
+  min-height: 75vh;
+  background-image: linear-gradient(
+      rgba(141, 39, 174, 0.3),
+      rgba(141, 39, 174, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+} */
+.header-title {
+  font-size: 4.2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header-title {
+    font-size: 2.2rem;
+    font-family: "Times New Roman", Times, serif;
   }
+}
+/* ------------------------------------------------------- */
+
+/* ADD DATA AND EDIT DATA => SHADOW */
+.input-data-form {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.add-edit-title {
+  color: black;
+}
+@media only screen and (max-width: 620px) {
+  .add-edit-title {
+    font-size: large;
+  }
+}
+label {
+  color: rgba(0, 0, 0, 0.849);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+/* END => ADD DATA AND EDIT DATA => SHADOW */
+/* ------------------------------------------------------- */
+
+/* SUBMIT BUTTON LOADER AND HOVER */
+.submit-btn-loader {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ffffff50;
+  border-top-color: #ffffff;
+  animation: spin013151 1s linear infinite;
+  border-radius: 100%;
+ 
+}
+
+@keyframes spin013151 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.green-color:hover {
+  background-color: green !important;
 }
